@@ -1,0 +1,305 @@
+body{
+    overflow: hidden;
+    font-family:arial,sans-serif;
+    height: 100vh;
+}
+
+header {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    padding: 0.5em 0;
+    height: 5vh;
+}
+
+header:nth-of-type(3)
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.link{
+    margin-right: 10px;
+    color: grey;
+
+}
+
+
+
+a.link {
+    color:gray;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.material-icons{
+    margin-right: 1em;
+    color:gray;
+}
+
+.material-icons:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(233, 229, 229, 0.616);
+}
+
+span + p{
+    display: none;
+}
+
+
+span:hover + p{
+    display:block;
+    position:absolute;
+    top: 5%;
+    right: 4%;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: 0.2em;
+    background-color: grey;
+   
+}
+
+.gmailName{ 
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    height: 2.5vw;
+    width: 2.5vw;
+    border: 3px  grey;
+}
+
+.gmailName:hover{
+    cursor: pointer;
+    border: 1px solid rgb(240, 237, 237);
+}
+
+button[type=text] + p{
+    display: none;
+}
+
+button[type=text]:hover + p{
+    display: block;
+    position: absolute;
+    font-size: 1em;
+    top: 2.5em;
+    /* width: 225px;
+    height: 60px; */
+    background-color: gray;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.image {
+    margin: 0 calc(78%/2);
+    height: 15vh;
+}
+
+img {
+    height: 7em;
+    width: 21em;
+}
+
+.GoogleSearch {
+    margin: 1.5em calc(70%/2);
+    height: 3vh;
+}
+input[type=text]{
+    width: 35em;
+    height: 2.5em;
+    border: 2px solid rgb(207, 198, 198,1);
+    border-radius: 10em;
+    outline:  none;
+    background-image: url("searchKiPhoto.svg");
+    filter: opacity(0.3);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+ }
+ 
+input[type=text]:focus{
+    box-shadow: 2px 2px 4px 4px rgb(211, 204, 204,0.24), 1px 1px 4px 4px rgb(211, 204, 204,0.24);
+}
+
+input[type=text]:hover{
+    box-shadow: 2px 2px 4px 4px rgb(211, 204, 204,0.24), 1px 1px 4px 4px rgb(211, 204, 204,0.24);
+    
+}
+
+.Search {
+    display : flex;
+    height: 5vh;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.styleMe{
+    
+    padding: 10px;
+    background-color: #f7f2f3;
+    border:hidden;
+    justify-content: center;
+    font-family: sans-serif;
+
+}
+
+.styleMe:focus , .styleMe:hover{
+    cursor: pointer;
+    transition: border 1ms ease-in-out;
+    border: 1.5px solid rgb(214, 207, 207);
+    border-bottom-width: 0.6px;
+}
+
+#pin1 {
+    position : absolute;
+    left: 42%;
+}
+#pin {
+    position : absolute;
+    left: 52%;
+}
+
+ul.lang{
+    margin: 0 27%;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 4em;
+    height: 5vh;
+}
+
+li.Same{
+    margin-left: 8%;
+}
+a.same{
+    padding: 15px 15px;
+    text-decoration: none;
+    color: rgb(119, 119, 153);
+}
+a.same:hover{
+    color: purple;
+}
+
+footer {
+    height: 15vh;
+
+}
+p.country{
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(179, 176, 176);
+}
+
+.free {
+    height: 25vh;
+}
+footer ul {
+    
+    display : flex;
+    /* justify-content: flex-start; */
+    list-style-type: none;
+    background-color: rgb(241, 238, 238);
+}
+
+footer li{
+    
+    padding: 20px;
+}
+
+a.footer1{
+    color: rgb(119, 119, 153);
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(241, 238, 238);
+}
+a.footer2{
+    margin-left : 40em;
+    text-decoration: none;
+}
+
+a.footer21{
+    text-decoration: none;
+}
+.country {
+    color: grey;
+}
+@media (max-width: 760px){
+
+    .link {
+        font-size: 0.8em;
+    }
+
+    /* .material-icons{
+        height: 0.75em;
+        width: 0.75em;
+    } */
+
+    .material-icons:hover{
+        border-radius: 50%;
+    }
+
+    .gmailName{
+        height: 1.5em;
+        width: 1.5em;
+        
+    }
+
+    span:hover + p{
+        font-size: 0.6em;
+
+    }
+
+    button[type=text]:hover + p{
+        font-size: 0.6em;
+        margin-top: 14px;
+    }
+    img {
+        width: 7em;
+        height: 4em;
+        padding-left: 3em;
+    }
+
+    input[type=text]{
+        width: 17em;
+        height: 1em;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .styleMe{
+        font-size: 0.67em;
+        /* padding: -10em; */
+    }
+
+    #pin1{
+        padding: 6px;
+        left: 40%;
+    }
+
+    #pin {
+        padding: 6px;
+        left: 55%;
+    }
+
+    .lang , footer p {
+        font-size: 0.67em;
+    }
+
+}
+
+@media (max-width: 1200px){
+    footer ul{
+        font-size: 0.7em;
+    }
+}
