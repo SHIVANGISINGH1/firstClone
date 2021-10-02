@@ -10,8 +10,7 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    align-content: center;
-    padding: 0.5em 0;
+    padding: 0.5rrem 0;
     height: 5vh;
 }
 
@@ -25,10 +24,7 @@ header:nth-of-type(3)
 .link{
     margin-right: 10px;
     color: grey;
-
 }
-
-
 
 a.link {
     color:gray;
@@ -41,7 +37,7 @@ a:hover{
 
 
 .material-icons{
-    margin-right: 1em;
+    margin-right: 1rrem;
     color:gray;
 }
 
@@ -63,7 +59,7 @@ span:hover + p{
     right: 4%;
     border: 2px solid grey;
     border-radius: 6px;
-    padding: 0.2em;
+    padding: 0.2rem;
     background-color: grey;
    
 }
@@ -72,9 +68,10 @@ span:hover + p{
     border-radius: 50%;
     background-color: red;
     color: black;
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 2.2vw;
+    width: 2.2vw;
     border: 3px  grey;
+    margin-left: 1rem;
 }
 
 .gmailName:hover{
@@ -89,56 +86,57 @@ button[type=text] + p{
 button[type=text]:hover + p{
     display: block;
     position: absolute;
-    font-size: 1em;
-    top: 2.5em;
-    /* width: 225px;
-    height: 60px; */
+    font-size: 1rem;
+    top: 2.5rem;
     background-color: gray;
     border: 2px solid grey;
     border-radius: 5px;
 }
 
 .image {
-    margin: 0 calc(78%/2);
+    display:flex;
+    justify-content: center;
     height: 15vh;
 }
 
 img {
-    height: 7em;
-    width: 21em;
+    height: 7rem;
+    width: 21rem;
 }
 
 .GoogleSearch {
-    margin: 1.5em calc(70%/2);
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
     height: 3vh;
 }
 input[type=text]{
-    width: 35em;
-    height: 2.5em;
+    width: 35rem;
+    height: 2.5rem;
     border: 2px solid rgb(207, 198, 198,1);
-    border-radius: 10em;
+    border-radius: 10rem;
     outline:  none;
-    background-image: url("searchKiPhoto.svg");
-    filter: opacity(0.3);
+    background-image: url("image/search.png");
     background-repeat: no-repeat;
     background-position: 10px;
     padding-left: 40px;
  }
  
 input[type=text]:focus{
-    box-shadow: 2px 2px 4px 4px rgb(211, 204, 204,0.24), 1px 1px 4px 4px rgb(211, 204, 204,0.24);
+    box-shadow: 2px 2px 4px 4px rgba(245, 255, 255), 1px 1px 4px 4px rgba(245, 255, 255);
 }
 
 input[type=text]:hover{
-    box-shadow: 2px 2px 4px 4px rgb(211, 204, 204,0.24), 1px 1px 4px 4px rgb(211, 204, 204,0.24);
+    box-shadow: 2px 2px 4px 4px rgba(245, 255, 255), 1px 1px 4px 4px rgba(245, 255, 255);
     
 }
 
 .Search {
     display : flex;
+    justify-content: space-around;
     height: 5vh;
     margin-top: 5%;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .styleMe{
@@ -169,15 +167,17 @@ input[type=text]:hover{
 
 ul.lang{
     margin: 0 27%;
-    display: flex;
+    /* display: flex; */
     list-style-type: none;
     justify-content: center;
-    margin-top: 4em;
+    margin-top: -1.23rem;
     height: 5vh;
 }
 
-li.Same{
-    margin-left: 8%;
+.Same{
+    display: block;
+    margin-left: 14rem;
+    padding-top: 4rem;
 }
 a.same{
     padding: 15px 15px;
@@ -187,33 +187,39 @@ a.same{
 a.same:hover{
     color: purple;
 }
-
-footer {
-    height: 15vh;
-
-}
-p.country{
+.lang{
     display: flex;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid rgb(179, 176, 176);
+    flex-direction: row;
 }
 
 .free {
-    height: 25vh;
-}
-footer ul {
-    
-    display : flex;
-    /* justify-content: flex-start; */
-    list-style-type: none;
-    background-color: rgb(241, 238, 238);
+    height: 28vh;
 }
 
-footer li{
+footer {
+    height: 7vh;
     
-    padding: 20px;
 }
+div.country{
+    height: 2rem;
+    /* border-bottom: 1px solid grey; */
+    background-color: rgb(241,238,238);
+}
+
+ul.futer {
+    display: flex;
+    flex-direction: row;
+    /* border-top: 1px solid grey; */
+    margin-top: -0.5rem;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 50%;
+    background-color: rgb(241, 238, 238);
+    margin-left: -3rem;
+    padding-top: 1rem;
+}
+
+
 
 a.footer1{
     color: rgb(119, 119, 153);
@@ -222,65 +228,73 @@ a.footer1{
 
 footer {
     background-color: rgb(241, 238, 238);
+    /* border-top: 1px solid grey; */
 }
-a.footer2{
-    margin-left : 40em;
+
+ul.sec2{
+    display: flex;
+    margin-top: -2rem;
+    margin-left: 50rem;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+}
+
+ a.footer2,a.footer21{
     text-decoration: none;
 }
 
-a.footer21{
-    text-decoration: none;
-}
 .country {
     color: grey;
-}
-@media (max-width: 760px){
+} 
+ @media (max-width: 760px){
 
     .link {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 
-    /* .material-icons{
-        height: 0.75em;
-        width: 0.75em;
-    } */
+     .material-icons{
+        height: 0.75rem;
+        width: 0.75rem;
+    } 
 
-    .material-icons:hover{
+     .material-icons:hover{
         border-radius: 50%;
     }
 
     .gmailName{
-        height: 1.5em;
-        width: 1.5em;
+        height: 1.5rem;
+        width: 1.5rem;
         
     }
 
     span:hover + p{
-        font-size: 0.6em;
+        font-size: 0.6rem;
 
     }
 
     button[type=text]:hover + p{
-        font-size: 0.6em;
+        font-size: 0.6rem;
         margin-top: 14px;
     }
     img {
-        width: 7em;
-        height: 4em;
-        padding-left: 3em;
+        width: 7rem;
+        height: 4rem;
+        padding-left: 3rem;
     }
 
     input[type=text]{
-        width: 17em;
-        height: 1em;
+        width: 17rem;
+        height: 1rem;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
-    .styleMe{
-        font-size: 0.67em;
-        /* padding: -10em; */
-    }
+    .stylreme{
+        font-size: 0.67rem;
+        /* padding: -10rem; */
+     }
 
     #pin1{
         padding: 6px;
@@ -293,13 +307,13 @@ a.footer21{
     }
 
     .lang , footer p {
-        font-size: 0.67em;
+        font-size: 0.67rem;
     }
 
 }
 
 @media (max-width: 1200px){
     footer ul{
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
-}
+}   
