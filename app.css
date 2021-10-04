@@ -115,7 +115,7 @@ img {
 input[type=text]{
     width: 35rem;
     height: 6vh;
-    border: 2px solid rgb(207, 198, 198,1);
+    border: 1px solid rgb(207, 198, 198,1);
     border-radius: 10rem;
     outline:  none;
     background-image: url("image/mic.png");
@@ -130,12 +130,14 @@ input[type=text]
                 url("image/mic.png") no-repeat right center;
 }
 input[type=text]:focus{
-    box-shadow: 2px 2px 4px 4px rgba(245, 255, 255), 1px 1px 4px 4px rgba(245, 255, 255);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border:none;
 }
 
 input[type=text]:hover{
-    box-shadow: 2px 2px 4px 4px rgba(245, 255, 255), 1px 1px 4px 4px rgba(245, 255, 255);
-    
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border:none;
+    transition: ease-in 30ms;
 }
 
 .Search {
