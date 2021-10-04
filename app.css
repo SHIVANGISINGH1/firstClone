@@ -53,7 +53,6 @@ span + p{
     display: none;
 }
 
-
 span:hover + p{
     display:block;
     position:absolute;
@@ -113,7 +112,6 @@ img {
     height: 3vh;
 }
 
-
 input[type=text]{
     width: 35rem;
     height: 6vh;
@@ -157,6 +155,7 @@ input[type=text]:hover{
 .button2{
     margin-left: 1rem;
 }
+
 .button1:focus , .button1:hover , .button2:focus , .button2:hover{
     cursor: pointer;
     outline: none;
@@ -170,6 +169,7 @@ input[type=text]:hover{
     flex-direction: row;
     justify-content: center;
 }
+
 ul.lang{
     list-style-type: none;
     justify-content: center;
