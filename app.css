@@ -2,6 +2,8 @@ body{
     overflow: hidden;
     font-family:arial,sans-serif;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -185,7 +187,7 @@ ul.lang{
 a.same{
     padding: 15px 15px;
     text-decoration: none;
-    color: rgb(119, 119, 153);
+    color: rgb(19, 79, 245);
 }
 
 a.same:hover{
@@ -205,7 +207,7 @@ a.same:hover{
 .footer{
     display: flex;
     border-bottom: 1px solid grey;
-    height: 5vh;
+    height: 8vh;
     flex-direction: column;
     justify-content: center;
     background-color: #f7f2f3;
@@ -222,7 +224,7 @@ ul.futer {
     width: 50%;
 }
 
-a.footer1 , a.footer11,a.footer2 ,a.footer21{
+a.footer1 , a.footer11,a.footer2 ,a.footer21,.footer3{
     color: rgb(119, 119, 153); 
     text-decoration: none;
 }
@@ -230,7 +232,7 @@ a.footer1 , a.footer11,a.footer2 ,a.footer21{
 footer {
     background-color: rgb(241, 238, 238);
     /* border-top: 1px solid grey; */
-    height: 18vh;
+    height: 11vh;
 } 
 
 a.footer11{
@@ -256,3 +258,4 @@ a.footer2, a.footer21{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
